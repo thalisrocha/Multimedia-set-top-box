@@ -1,0 +1,4 @@
+<map id="Photo" name="Photo">
+<area shape="rect" id="node1" title="The Photo class represents a photo media file with a name, path, and location coordinates." alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node2" href="$classBase.html" title="Abstract base class for multimedia objects." alt="" coords="7,5,62,32"/>
+</map>

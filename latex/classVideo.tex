@@ -1,0 +1,126 @@
+\hypertarget{classVideo}{}\doxysection{Video Class Reference}
+\label{classVideo}\index{Video@{Video}}
+
+
+Represents a video object and inherits from the \mbox{\hyperlink{classBase}{Base}} class.  
+
+
+
+
+{\ttfamily \#include $<$Video.\+h$>$}
+
+
+
+Inheritance diagram for Video\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classVideo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Video\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classVideo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}\label{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}} 
+\mbox{\hyperlink{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}{Video}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classVideo}{Video}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVideo_a84600b1dd993645414dceff770042112}{Video}} (string name, string path, float duration)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classVideo}{Video}} class (Parameterized). \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classVideo_a280bdfd76d8bd7f3ca90beb8eb6f14a2}{get\+Duration}} () const
+\begin{DoxyCompactList}\small\item\em Get the Duration object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_aca0f92f98c7b6377aaa23af1645b8172}{set\+Duration}} (int duration)
+\begin{DoxyCompactList}\small\item\em Sets the duration of the video. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_a36b833882d6514a09a8bb0c685678d4a}{view\+Variables}} (ostream \&s)
+\begin{DoxyCompactList}\small\item\em Outputs the video variables. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVideo_a0e4c49010c93653051440b1b0680f7ef}\label{classVideo_a0e4c49010c93653051440b1b0680f7ef}} 
+void \mbox{\hyperlink{classVideo_a0e4c49010c93653051440b1b0680f7ef}{play\+Media}} ()
+\begin{DoxyCompactList}\small\item\em Plays the video using the mpv media player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a video object and inherits from the \mbox{\hyperlink{classBase}{Base}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVideo_a84600b1dd993645414dceff770042112}\label{classVideo_a84600b1dd993645414dceff770042112}} 
+\index{Video@{Video}!Video@{Video}}
+\index{Video@{Video}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{Video()}{Video()}}
+{\footnotesize\ttfamily Video\+::\+Video (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path,  }\item[{float}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \mbox{\hyperlink{classVideo}{Video}} class (Parameterized). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the video. \\
+\hline
+{\em path} & The path to the video file. \\
+\hline
+{\em duration} & The duration of the video. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVideo_a280bdfd76d8bd7f3ca90beb8eb6f14a2}\label{classVideo_a280bdfd76d8bd7f3ca90beb8eb6f14a2}} 
+\index{Video@{Video}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily float Video\+::get\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Duration object. 
+
+\begin{DoxyReturn}{Returns}
+The duration of the video. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVideo_aca0f92f98c7b6377aaa23af1645b8172}\label{classVideo_aca0f92f98c7b6377aaa23af1645b8172}} 
+\index{Video@{Video}!setDuration@{setDuration}}
+\index{setDuration@{setDuration}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{setDuration()}{setDuration()}}
+{\footnotesize\ttfamily void Video\+::set\+Duration (\begin{DoxyParamCaption}\item[{int}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the duration of the video. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duration} & The duration of the video. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVideo_a36b833882d6514a09a8bb0c685678d4a}\label{classVideo_a36b833882d6514a09a8bb0c685678d4a}} 
+\index{Video@{Video}!viewVariables@{viewVariables}}
+\index{viewVariables@{viewVariables}!Video@{Video}}
+\doxysubsubsection{\texorpdfstring{viewVariables()}{viewVariables()}}
+{\footnotesize\ttfamily void Video\+::view\+Variables (\begin{DoxyParamCaption}\item[{ostream \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Outputs the video variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The stream to output. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBase_a50ba47ff36299169afc7c552c8157e0c}{Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{Video_8h}{Video.\+h}}\end{DoxyCompactItemize}

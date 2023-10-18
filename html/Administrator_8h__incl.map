@@ -1,0 +1,13 @@
+<map id="cpp/Administrator.h" name="cpp/Administrator.h">
+<area shape="rect" id="node1" title="This file contains the Administrator class which is responsible for managing and creating multimedia ..." alt="" coords="167,5,318,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,56,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="27,155,104,181"/>
+<area shape="rect" id="node4" href="$Photo_8h.html" title="This file contains the definition of the Photo class, which inherits from Base and represents a photo..." alt="" coords="385,155,455,181"/>
+<area shape="rect" id="node5" href="$Base_8h.html" title="Definition of the Base class, an abstract class for multimedia objects." alt="" coords="209,229,276,256"/>
+<area shape="rect" id="node9" href="$Video_8h.html" title="Contains the declaration of the Video class, which inherits from the Base class and represents a vide..." alt="" coords="281,155,351,181"/>
+<area shape="rect" id="node10" href="$Film_8h.html" title="Definition of the Film class, which is a derived class of the Video class. It adds the capability of ..." alt="" coords="280,80,341,107"/>
+<area shape="rect" id="node11" href="$Group_8h.html" title="Defines the Group class, which represents a group of Base objects implemented as a list of shared_ptr..." alt="" coords="131,80,205,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="303,304,361,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="199,304,279,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="124,304,167,331"/>
+</map>

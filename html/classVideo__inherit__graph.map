@@ -1,0 +1,5 @@
+<map id="Video" name="Video">
+<area shape="rect" id="node1" title="Represents a video object and inherits from the Base class." alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$classFilm.html" title="This class is defined in the Film.h header file and inherits from the Video class." alt="" coords="10,155,59,181"/>
+<area shape="rect" id="node2" href="$classBase.html" title="Abstract base class for multimedia objects." alt="" coords="7,5,62,32"/>
+</map>

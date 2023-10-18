@@ -1,0 +1,4 @@
+<map id="Group" name="Group">
+<area shape="rect" id="node1" title="Represents a group of Base objects, implemented as a list of shared_ptr&lt;Base&gt; pointers." alt="" coords="20,80,81,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,96,32"/>
+</map>

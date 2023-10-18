@@ -1,0 +1,83 @@
+\hypertarget{main_8cpp}{}\doxysection{cpp/main.cpp File Reference}
+\label{main_8cpp}\index{cpp/main.cpp@{cpp/main.cpp}}
+
+
+This file contains the main function of the program which creates multimedia objects, adds them to groups, and runs a TCP server to receive requests and send responses to clients.  
+
+
+{\ttfamily \#include \char`\"{}Base.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Photo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Video.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Film.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Group.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Administrator.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}tcpserver.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a1910c1e3b47b9105b56fedff24ae508a}\label{main_8cpp_a1910c1e3b47b9105b56fedff24ae508a}} 
+using {\bfseries Ptr} = shared\+\_\+ptr$<$ \mbox{\hyperlink{classBase}{Base}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}{main}} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em The main function of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_a11717c934f77ad5167dac5d28562d85a}\label{main_8cpp_a11717c934f77ad5167dac5d28562d85a}} 
+const int {\bfseries PORT} = 3331
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the main function of the program which creates multimedia objects, adds them to groups, and runs a TCP server to receive requests and send responses to clients. 
+
+\begin{DoxyAuthor}{Author}
+Thalis Rocha Pestana 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/02-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}\label{main_8cpp_ac0f2228420376f4db7e1274f2b41667c}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+The main function of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments provided to the program. \\
+\hline
+{\em argv} & An array of C-\/style strings containing the command-\/line arguments provided to the program. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int An integer indicating whether the program ran successfully (0) or encountered an error (non-\/zero). 
+\end{DoxyReturn}

@@ -1,0 +1,196 @@
+\hypertarget{classBase}{}\doxysection{Base Class Reference}
+\label{classBase}\index{Base@{Base}}
+
+
+Abstract base class for multimedia objects.  
+
+
+
+
+{\ttfamily \#include $<$Base.\+h$>$}
+
+
+
+Inheritance diagram for Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classBase__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}{Base}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBase_a346d03858f0578cea1bffa1505adf14c}{Base}} (string path, string name)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classBase}{Base}} object (Parameterized) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBase_a722da881b6c70cfcbde9243abcfbf334}{$\sim$\+Base}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBase_aebe5e05a717a5ec31df7c6bc9d1f2771}{get\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Accessor for the path variable. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBase_a45b12fb6d496f1d47b58c91f3caad7b8}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Accessor for the name variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBase_aa175ef2effcb71c88dc765f214f3857b}{set\+Path}} (string path)
+\begin{DoxyCompactList}\small\item\em Modifier for the path variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBase_a2c0cb59ba48a277c3ddff3a6f1580b30}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Modifier for the name variable. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBase_a50ba47ff36299169afc7c552c8157e0c}{view\+Variables}} (ostream \&s)
+\begin{DoxyCompactList}\small\item\em Method to view the object\textquotesingle{}s variables. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBase_ab24e181fb8eb98777841adba25ba3764}{play\+Media}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract method to play the multimedia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for multimedia objects. 
+
+The \mbox{\hyperlink{classBase}{Base}} class defines common attributes and methods that are shared by all subclasses. It contains attributes for the name and path of the multimedia object, as well as methods for accessing and modifying those attributes. It also defines a virtual method for playing the multimedia object and an abstract method for displaying the variables of the object, which is implemented by subclasses. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}\label{classBase_a5ffe0568374d8b9b4c4ec32953fd6453}} 
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{Base()}{Base()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Base\+::\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Creates a new \mbox{\hyperlink{classBase}{Base}} object with empty name and path. \mbox{\Hypertarget{classBase_a346d03858f0578cea1bffa1505adf14c}\label{classBase_a346d03858f0578cea1bffa1505adf14c}} 
+\index{Base@{Base}!Base@{Base}}
+\index{Base@{Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{Base()}{Base()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Base\+::\+Base (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classBase}{Base}} object (Parameterized) 
+
+Creates a new \mbox{\hyperlink{classBase}{Base}} object with the given name and path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & path The path to the multimedia object \\
+\hline
+{\em name} & name The name of the multimedia object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBase_a722da881b6c70cfcbde9243abcfbf334}\label{classBase_a722da881b6c70cfcbde9243abcfbf334}} 
+\index{Base@{Base}!````~Base@{$\sim$Base}}
+\index{````~Base@{$\sim$Base}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{$\sim$Base()}{~Base()}}
+{\footnotesize\ttfamily Base\+::$\sim$\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destroys the \mbox{\hyperlink{classBase}{Base}} object and releases any resources used by it. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBase_a45b12fb6d496f1d47b58c91f3caad7b8}\label{classBase_a45b12fb6d496f1d47b58c91f3caad7b8}} 
+\index{Base@{Base}!getName@{getName}}
+\index{getName@{getName}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Base\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accessor for the name variable. 
+
+Returns the name of the multimedia object.
+
+\begin{DoxyReturn}{Returns}
+The name of the multimedia object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBase_aebe5e05a717a5ec31df7c6bc9d1f2771}\label{classBase_aebe5e05a717a5ec31df7c6bc9d1f2771}} 
+\index{Base@{Base}!getPath@{getPath}}
+\index{getPath@{getPath}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily string Base\+::get\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accessor for the path variable. 
+
+Returns the path to the multimedia object.
+
+\begin{DoxyReturn}{Returns}
+The path to the multimedia object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBase_ab24e181fb8eb98777841adba25ba3764}\label{classBase_ab24e181fb8eb98777841adba25ba3764}} 
+\index{Base@{Base}!playMedia@{playMedia}}
+\index{playMedia@{playMedia}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{playMedia()}{playMedia()}}
+{\footnotesize\ttfamily virtual void Base\+::play\+Media (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Abstract method to play the multimedia. 
+
+This method must be implemented by any derived class, and should play the multimedia object using the appropriate player for the type of multimedia. 
+
+Implemented in \mbox{\hyperlink{classVideo_a0e4c49010c93653051440b1b0680f7ef}{Video}}, \mbox{\hyperlink{classPhoto_aaf97224bbf961d242e8593efd921ed63}{Photo}}, and \mbox{\hyperlink{classFilm_adf5d85a80986e4a6ddabb73a7850ac41}{Film}}.
+
+\mbox{\Hypertarget{classBase_a2c0cb59ba48a277c3ddff3a6f1580b30}\label{classBase_a2c0cb59ba48a277c3ddff3a6f1580b30}} 
+\index{Base@{Base}!setName@{setName}}
+\index{setName@{setName}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Base\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Modifier for the name variable. 
+
+Sets the name of the multimedia object to the given value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name The new name of the multimedia object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBase_aa175ef2effcb71c88dc765f214f3857b}\label{classBase_aa175ef2effcb71c88dc765f214f3857b}} 
+\index{Base@{Base}!setPath@{setPath}}
+\index{setPath@{setPath}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily void Base\+::set\+Path (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Modifier for the path variable. 
+
+Sets the path to the multimedia object to the given value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBase_a50ba47ff36299169afc7c552c8157e0c}\label{classBase_a50ba47ff36299169afc7c552c8157e0c}} 
+\index{Base@{Base}!viewVariables@{viewVariables}}
+\index{viewVariables@{viewVariables}!Base@{Base}}
+\doxysubsubsection{\texorpdfstring{viewVariables()}{viewVariables()}}
+{\footnotesize\ttfamily void Base\+::view\+Variables (\begin{DoxyParamCaption}\item[{ostream \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to view the object\textquotesingle{}s variables. 
+
+Prints the name and path of the multimedia object to the given output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The output stream to print the variables to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classVideo_a36b833882d6514a09a8bb0c685678d4a}{Video}}, \mbox{\hyperlink{classPhoto_abacc288a8ad311b5ee8b220bc1f96224}{Photo}}, and \mbox{\hyperlink{classFilm_a5fdcc4168b413aa546fdfc3890656852}{Film}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{Base_8h}{Base.\+h}}\item 
+cpp/Base.\+cpp\end{DoxyCompactItemize}

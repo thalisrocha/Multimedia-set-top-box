@@ -1,0 +1,9 @@
+<map id="cpp/Base.h" name="cpp/Base.h">
+<area shape="rect" id="node1" title="Definition of the Base class, an abstract class for multimedia objects." alt="" coords="154,5,247,32"/>
+<area shape="rect" id="node2" href="$Administrator_8h.html" title="This file contains the Administrator class which is responsible for managing and creating multimedia ..." alt="" coords="216,229,366,256"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="This file contains the main function of the program which creates multimedia objects,..." alt="" coords="179,304,288,331"/>
+<area shape="rect" id="node4" href="$Group_8h.html" title="Defines the Group class, which represents a group of Base objects implemented as a list of shared_ptr..." alt="" coords="26,155,126,181"/>
+<area shape="rect" id="node5" href="$Photo_8h.html" title="This file contains the definition of the Photo class, which inherits from Base and represents a photo..." alt="" coords="151,155,250,181"/>
+<area shape="rect" id="node6" href="$Video_8h.html" title="Contains the declaration of the Video class, which inherits from the Base class and represents a vide..." alt="" coords="347,80,446,107"/>
+<area shape="rect" id="node7" href="$Film_8h.html" title="Definition of the Film class, which is a derived class of the Video class. It adds the capability of ..." alt="" coords="375,155,463,181"/>
+</map>

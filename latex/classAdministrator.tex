@@ -1,0 +1,184 @@
+\hypertarget{classAdministrator}{}\doxysection{Administrator Class Reference}
+\label{classAdministrator}\index{Administrator@{Administrator}}
+
+
+The \mbox{\hyperlink{classAdministrator}{Administrator}} class is responsible for managing and creating multimedia and groups.  
+
+
+
+
+{\ttfamily \#include $<$Administrator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Ptr\+\_\+base \mbox{\hyperlink{classAdministrator_a08a0a70300c5cbb80be60ba186798fb4}{create\+Photo}} (string name, string path, float longitude, float latitude)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classPhoto}{Photo}} object and adds it to multimedia\+\_\+table. \end{DoxyCompactList}\item 
+Ptr\+\_\+base \mbox{\hyperlink{classAdministrator_a8b8a2f8750a233dfcb13c6d862d35a7a}{create\+Video}} (string name, string path, float duration)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{classVideo}{Video}} object and adds it to multimedia\+\_\+table. \end{DoxyCompactList}\item 
+Ptr\+\_\+base \mbox{\hyperlink{classAdministrator_aee0f8af41e30f805052ed76acdb97d20}{create\+Film}} (string name, string path, float duration, int n\+Chapters, int $\ast$chapters)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classFilm}{Film}} object and adds it to multimedia\+\_\+table. \end{DoxyCompactList}\item 
+Ptr\+\_\+group \mbox{\hyperlink{classAdministrator_a4f3028f41e93b18fad18f0ad89bd8911}{create\+Group}} (string group\+Name)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classGroup}{Group}} object and adds it to group\+\_\+table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAdministrator_ac1d7230c37dca5a4c53eda77cd1e6e54}{search\+Multimedia}} (string obj\+Name)
+\begin{DoxyCompactList}\small\item\em Searches for a multimedia or group object with the given name and displays its variables. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAdministrator_aa3e3c5d30a091f4b095890df6674311d}{play\+Multimedia}} (string obj\+Name, ostream \&s)
+\begin{DoxyCompactList}\small\item\em Plays the multimedia object with the given name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAdministrator_a26889e755d549e5ac467855cbe9a2525}{show\+Variables}} (string obj\+Name, ostream \&s)
+\begin{DoxyCompactList}\small\item\em Displays the variables of a multimedia object or a group with the given name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classAdministrator}{Administrator}} class is responsible for managing and creating multimedia and groups. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAdministrator_aee0f8af41e30f805052ed76acdb97d20}\label{classAdministrator_aee0f8af41e30f805052ed76acdb97d20}} 
+\index{Administrator@{Administrator}!createFilm@{createFilm}}
+\index{createFilm@{createFilm}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{createFilm()}{createFilm()}}
+{\footnotesize\ttfamily Ptr\+\_\+base Administrator\+::create\+Film (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path,  }\item[{float}]{duration,  }\item[{int}]{n\+Chapters,  }\item[{int $\ast$}]{chapters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \mbox{\hyperlink{classFilm}{Film}} object and adds it to multimedia\+\_\+table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the film. \\
+\hline
+{\em path} & The path to the film. \\
+\hline
+{\em duration} & The duration of the film. \\
+\hline
+{\em n\+Chapters} & The number of chapters in the film. \\
+\hline
+{\em chapters} & An array containing the chapter lengths. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr\+\_\+base A shared pointer to the new film. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAdministrator_a4f3028f41e93b18fad18f0ad89bd8911}\label{classAdministrator_a4f3028f41e93b18fad18f0ad89bd8911}} 
+\index{Administrator@{Administrator}!createGroup@{createGroup}}
+\index{createGroup@{createGroup}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{createGroup()}{createGroup()}}
+{\footnotesize\ttfamily Ptr\+\_\+group Administrator\+::create\+Group (\begin{DoxyParamCaption}\item[{string}]{group\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \mbox{\hyperlink{classGroup}{Group}} object and adds it to group\+\_\+table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & The name of the group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr\+\_\+group A shared pointer to the new group. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAdministrator_a08a0a70300c5cbb80be60ba186798fb4}\label{classAdministrator_a08a0a70300c5cbb80be60ba186798fb4}} 
+\index{Administrator@{Administrator}!createPhoto@{createPhoto}}
+\index{createPhoto@{createPhoto}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{createPhoto()}{createPhoto()}}
+{\footnotesize\ttfamily Ptr\+\_\+base Administrator\+::create\+Photo (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path,  }\item[{float}]{longitude,  }\item[{float}]{latitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new \mbox{\hyperlink{classPhoto}{Photo}} object and adds it to multimedia\+\_\+table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the photo. \\
+\hline
+{\em path} & The path to the photo. \\
+\hline
+{\em longitude} & The longitude of the photo. \\
+\hline
+{\em latitude} & The latitude of the photo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr\+\_\+base A shared pointer to the new photo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAdministrator_a8b8a2f8750a233dfcb13c6d862d35a7a}\label{classAdministrator_a8b8a2f8750a233dfcb13c6d862d35a7a}} 
+\index{Administrator@{Administrator}!createVideo@{createVideo}}
+\index{createVideo@{createVideo}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{createVideo()}{createVideo()}}
+{\footnotesize\ttfamily Ptr\+\_\+base Administrator\+::create\+Video (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{path,  }\item[{float}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a \mbox{\hyperlink{classVideo}{Video}} object and adds it to multimedia\+\_\+table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the video. \\
+\hline
+{\em path} & The path to the video. \\
+\hline
+{\em duration} & The duration of the video. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ptr\+\_\+base A shared pointer to the new video. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAdministrator_aa3e3c5d30a091f4b095890df6674311d}\label{classAdministrator_aa3e3c5d30a091f4b095890df6674311d}} 
+\index{Administrator@{Administrator}!playMultimedia@{playMultimedia}}
+\index{playMultimedia@{playMultimedia}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{playMultimedia()}{playMultimedia()}}
+{\footnotesize\ttfamily int Administrator\+::play\+Multimedia (\begin{DoxyParamCaption}\item[{string}]{obj\+Name,  }\item[{ostream \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plays the multimedia object with the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the multimedia object to play. \\
+\hline
+{\em s} & The output stream to write to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 1 if no object was found, 2 if the object was a group, and 3 if the object was multimedia. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAdministrator_ac1d7230c37dca5a4c53eda77cd1e6e54}\label{classAdministrator_ac1d7230c37dca5a4c53eda77cd1e6e54}} 
+\index{Administrator@{Administrator}!searchMultimedia@{searchMultimedia}}
+\index{searchMultimedia@{searchMultimedia}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{searchMultimedia()}{searchMultimedia()}}
+{\footnotesize\ttfamily void Administrator\+::search\+Multimedia (\begin{DoxyParamCaption}\item[{string}]{obj\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Searches for a multimedia or group object with the given name and displays its variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the object to search for. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAdministrator_a26889e755d549e5ac467855cbe9a2525}\label{classAdministrator_a26889e755d549e5ac467855cbe9a2525}} 
+\index{Administrator@{Administrator}!showVariables@{showVariables}}
+\index{showVariables@{showVariables}!Administrator@{Administrator}}
+\doxysubsubsection{\texorpdfstring{showVariables()}{showVariables()}}
+{\footnotesize\ttfamily bool Administrator\+::show\+Variables (\begin{DoxyParamCaption}\item[{string}]{obj\+Name,  }\item[{ostream \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Displays the variables of a multimedia object or a group with the given name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+Name} & The name of the multimedia object or group to display. \\
+\hline
+{\em s} & The output stream to write to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if no multimedia object or group with the given name is found, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{Administrator_8h}{Administrator.\+h}}\end{DoxyCompactItemize}
